@@ -8,21 +8,6 @@
 uint8_t DIP_GetSW1BitStat(void)
 {
     uint8_t retval;
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH1_GPIO_Port, SW2_CH1_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH2_GPIO_Port, SW2_CH2_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH3_GPIO_Port, SW2_CH3_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH4_GPIO_Port, SW2_CH4_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH5_GPIO_Port, SW2_CH5_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH6_GPIO_Port, SW2_CH6_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH7_GPIO_Port, SW2_CH7_Pin);
-    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH8_GPIO_Port, SW2_CH8_Pin);
-    return retval ^ 0xff;
-}
-
-//获取SW2的拨码值
-uint8_t DIP_GetSW2BitStat(void)
-{
-    uint8_t retval = 0x00;
     retval = (retval << 1) | HAL_GPIO_ReadPin(SW1_CH1_GPIO_Port, SW1_CH1_Pin);
     retval = (retval << 1) | HAL_GPIO_ReadPin(SW1_CH2_GPIO_Port, SW1_CH2_Pin);
     retval = (retval << 1) | HAL_GPIO_ReadPin(SW1_CH3_GPIO_Port, SW1_CH3_Pin);
@@ -31,6 +16,21 @@ uint8_t DIP_GetSW2BitStat(void)
     retval = (retval << 1) | HAL_GPIO_ReadPin(SW1_CH6_GPIO_Port, SW1_CH6_Pin);
     retval = (retval << 1) | HAL_GPIO_ReadPin(SW1_CH7_GPIO_Port, SW1_CH7_Pin);
     retval = (retval << 1) | HAL_GPIO_ReadPin(SW1_CH8_GPIO_Port, SW1_CH8_Pin);
+    return retval ^ 0xff;
+}
+
+//获取SW2的拨码值
+uint8_t DIP_GetSW2BitStat(void)
+{
+    uint8_t retval = 0x00;
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH1_GPIO_Port, SW2_CH1_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH2_GPIO_Port, SW2_CH2_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH3_GPIO_Port, SW2_CH3_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH4_GPIO_Port, SW2_CH4_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH5_GPIO_Port, SW2_CH5_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH6_GPIO_Port, SW2_CH6_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH7_GPIO_Port, SW2_CH7_Pin);
+    retval = (retval << 1) | HAL_GPIO_ReadPin(SW2_CH8_GPIO_Port, SW2_CH8_Pin);
     return retval ^ 0xff;
 }
 

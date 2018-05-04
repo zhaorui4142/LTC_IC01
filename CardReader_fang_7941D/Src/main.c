@@ -307,9 +307,10 @@ eMBErrorCode eMBRegInputCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRe
 //FreeModbus保持寄存器回调函数，eMode模式(MB_REG_READ读保持寄存器,MB_REG_WRITE写保持寄存器)
 eMBErrorCode eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
 {
-    eMBErrorCode    eStatus = MB_ENOERR;
+    //eMBErrorCode    eStatus = MB_ENOERR;
     int             iRegIndex;
 	
+    //地址包含4000(40001开始)
     if((usAddress >= usRegHoldingStart) && (usAddress+usNRegs <= usRegHoldingStart+REG_HOLDING_NREGS))
     {
         iRegIndex = (int)(usAddress-usRegHoldingStart-1);
@@ -333,14 +334,42 @@ eMBErrorCode eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usN
                 usNRegs--;
             }
         }
-        
-    }
-    else
-    {
-        eStatus = MB_ENOREG;
+        return MB_ENOERR;
     }
     
-    return eStatus;
+    //地址不包含4000(1开始)
+    if((usAddress < usRegHoldingStart) && (usAddress+usNRegs <= REG_HOLDING_NREGS))
+    {
+        iRegIndex = (int)(usAddress-1);
+        
+        if(iRegIndex < 0) 
+            return MB_ENOREG;
+        
+        if(eMode == MB_REG_READ)
+        {
+            while( usNRegs > 0 )
+            {
+                *pucRegBuffer++ = (UCHAR)(usRegHoldingBuf[iRegIndex]>>8);
+                *pucRegBuffer++ = (UCHAR)(usRegHoldingBuf[iRegIndex]&0xFF);
+                iRegIndex++;
+                usNRegs--;
+            }
+        }
+        if(eMode == MB_REG_WRITE)
+        {
+            while( usNRegs > 0 )
+            {
+                usRegHoldingBuf[iRegIndex] = (((uint16_t)pucRegBuffer[0])<<8) | ((uint16_t)pucRegBuffer[1]);
+                pucRegBuffer+=2;
+                iRegIndex++;
+                usNRegs--;
+            }
+        }
+        return MB_ENOERR;
+    }
+    
+    //否则返回错误
+    return MB_ENOREG;
 }
 
 

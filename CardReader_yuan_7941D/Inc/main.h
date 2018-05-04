@@ -41,8 +41,7 @@
 
 /* Private define ------------------------------------------------------------*/
 
-#define SW1_CH8_Pin GPIO_PIN_13
-#define SW1_CH8_GPIO_Port GPIOC
+
 #define WIEGAND_D0_Pin GPIO_PIN_4
 #define WIEGAND_D0_GPIO_Port GPIOA
 #define WIEGAND_D1_Pin GPIO_PIN_5
@@ -55,36 +54,41 @@
 #define LED1_GPIO_Port GPIOB
 #define TIM3_CH4_BEEP_Pin GPIO_PIN_1
 #define TIM3_CH4_BEEP_GPIO_Port GPIOB
-#define SW2_CH1_Pin GPIO_PIN_12
-#define SW2_CH1_GPIO_Port GPIOB
-#define SW1_CH1_Pin GPIO_PIN_13
+
+#define SW1_CH1_Pin GPIO_PIN_12
 #define SW1_CH1_GPIO_Port GPIOB
-#define SW2_CH2_Pin GPIO_PIN_14
-#define SW2_CH2_GPIO_Port GPIOB
-#define SW1_CH2_Pin GPIO_PIN_15
+#define SW1_CH2_Pin GPIO_PIN_13
 #define SW1_CH2_GPIO_Port GPIOB
-#define SW2_CH3_Pin GPIO_PIN_8
-#define SW2_CH3_GPIO_Port GPIOA
-#define SW1_CH3_Pin GPIO_PIN_11
-#define SW1_CH3_GPIO_Port GPIOA
-#define SW2_CH4_Pin GPIO_PIN_12
-#define SW2_CH4_GPIO_Port GPIOA
+#define SW1_CH3_Pin GPIO_PIN_14
+#define SW1_CH3_GPIO_Port GPIOB
 #define SW1_CH4_Pin GPIO_PIN_15
-#define SW1_CH4_GPIO_Port GPIOA
-#define SW2_CH5_Pin GPIO_PIN_3
+#define SW1_CH4_GPIO_Port GPIOB
+#define SW1_CH5_Pin GPIO_PIN_8
+#define SW1_CH5_GPIO_Port GPIOA
+#define SW1_CH6_Pin GPIO_PIN_11
+#define SW1_CH6_GPIO_Port GPIOA
+#define SW1_CH7_Pin GPIO_PIN_12
+#define SW1_CH7_GPIO_Port GPIOA
+#define SW1_CH8_Pin GPIO_PIN_15
+#define SW1_CH8_GPIO_Port GPIOA
+
+#define SW2_CH1_Pin GPIO_PIN_3
+#define SW2_CH1_GPIO_Port GPIOB
+#define SW2_CH2_Pin GPIO_PIN_4
+#define SW2_CH2_GPIO_Port GPIOB
+#define SW2_CH3_Pin GPIO_PIN_5
+#define SW2_CH3_GPIO_Port GPIOB
+#define SW2_CH4_Pin GPIO_PIN_6
+#define SW2_CH4_GPIO_Port GPIOB
+#define SW2_CH5_Pin GPIO_PIN_7
 #define SW2_CH5_GPIO_Port GPIOB
-#define SW1_CH5_Pin GPIO_PIN_4
-#define SW1_CH5_GPIO_Port GPIOB
-#define SW2_CH6_Pin GPIO_PIN_5
+#define SW2_CH6_Pin GPIO_PIN_8
 #define SW2_CH6_GPIO_Port GPIOB
-#define SW1_CH6_Pin GPIO_PIN_6
-#define SW1_CH6_GPIO_Port GPIOB
-#define SW2_CH7_Pin GPIO_PIN_7
+#define SW2_CH7_Pin GPIO_PIN_9
 #define SW2_CH7_GPIO_Port GPIOB
-#define SW1_CH7_Pin GPIO_PIN_8
-#define SW1_CH7_GPIO_Port GPIOB
-#define SW2_CH8_Pin GPIO_PIN_9
-#define SW2_CH8_GPIO_Port GPIOB
+#define SW2_CH8_Pin GPIO_PIN_13
+#define SW2_CH8_GPIO_Port GPIOC
+
 
 /* USER CODE BEGIN Private defines */
 

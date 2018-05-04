@@ -96,15 +96,14 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pins : PBPin PBPin PBPin PBPin 
                            PBPin PBPin PBPin PBPin 
                            PBPin PBPin PBPin */
-  GPIO_InitStruct.Pin = SW2_CH1_Pin|SW1_CH1_Pin|SW2_CH2_Pin|SW1_CH2_Pin 
-                          |SW2_CH5_Pin|SW1_CH5_Pin|SW2_CH6_Pin|SW1_CH6_Pin 
-                          |SW2_CH7_Pin|SW1_CH7_Pin|SW2_CH8_Pin;
+  GPIO_InitStruct.Pin = SW2_CH1_Pin|SW2_CH2_Pin|SW2_CH3_Pin|SW2_CH4_Pin|SW2_CH5_Pin|SW2_CH6_Pin|SW2_CH7_Pin|
+                        SW1_CH1_Pin|SW1_CH2_Pin|SW1_CH3_Pin|SW1_CH4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin */
-  GPIO_InitStruct.Pin = SW2_CH3_Pin|SW1_CH3_Pin|SW2_CH4_Pin|SW1_CH4_Pin;
+  GPIO_InitStruct.Pin = SW2_CH5_Pin|SW2_CH6_Pin|SW2_CH7_Pin|SW2_CH8_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);

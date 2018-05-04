@@ -55,8 +55,8 @@ void S7941D_Init(UART_HandleTypeDef* huart, uint16_t* pBuf)
     phuart = huart;    
     
     //对应的地址是在modbus中的地址
-    hcommtag.state      =   pBuf + 0;
-    hcommtag.buf        =   pBuf + 1;
+    hcommtag.state      =   pBuf + 3;
+    hcommtag.buf        =   pBuf + 0;
     hidtag.state        =   pBuf + 10;
     hidtag.buf          =   pBuf + 11;
     hictag.state        =   pBuf + 14;

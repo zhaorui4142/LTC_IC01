@@ -1313,38 +1313,38 @@ Image Symbol Table
     i.eMBRegCoilsCB                          0x08003618   Section        0  main.o(i.eMBRegCoilsCB)
     i.eMBRegDiscreteCB                       0x0800361c   Section        0  main.o(i.eMBRegDiscreteCB)
     i.eMBRegHoldingCB                        0x08003620   Section        0  main.o(i.eMBRegHoldingCB)
-    i.eMBRegInputCB                          0x08003688   Section        0  main.o(i.eMBRegInputCB)
-    i.main                                   0x080036e8   Section        0  main.o(i.main)
-    i.prveMBError2Exception                  0x08003820   Section        0  mbutils.o(i.prveMBError2Exception)
-    i.prvucMBBIN2CHAR                        0x08003838   Section        0  mbascii.o(i.prvucMBBIN2CHAR)
-    prvucMBBIN2CHAR                          0x08003839   Thumb Code    26  mbascii.o(i.prvucMBBIN2CHAR)
-    i.prvucMBLRC                             0x08003852   Section        0  mbascii.o(i.prvucMBLRC)
-    prvucMBLRC                               0x08003853   Thumb Code    24  mbascii.o(i.prvucMBLRC)
-    i.prvvTIMERExpiredISR                    0x0800386c   Section        0  porttimer.o(i.prvvTIMERExpiredISR)
-    i.prvvUARTRxISR                          0x08003878   Section        0  portserial.o(i.prvvUARTRxISR)
-    i.prvvUARTTxReadyISR                     0x08003884   Section        0  portserial.o(i.prvvUARTTxReadyISR)
-    i.usMBCRC16                              0x08003890   Section        0  mbcrc.o(i.usMBCRC16)
-    i.vMBPortSerialEnable                    0x080038bc   Section        0  portserial.o(i.vMBPortSerialEnable)
-    i.vMBPortTimersDisable                   0x08003968   Section        0  porttimer.o(i.vMBPortTimersDisable)
-    i.vMBPortTimersEnable                    0x08003974   Section        0  porttimer.o(i.vMBPortTimersEnable)
-    i.xMBASCIIReceiveFSM                     0x08003990   Section        0  mbascii.o(i.xMBASCIIReceiveFSM)
-    i.xMBASCIITimerT1SExpired                0x08003a6c   Section        0  mbascii.o(i.xMBASCIITimerT1SExpired)
-    i.xMBASCIITransmitFSM                    0x08003a8c   Section        0  mbascii.o(i.xMBASCIITransmitFSM)
-    i.xMBPortEventGet                        0x08003b30   Section        0  portevent.o(i.xMBPortEventGet)
-    i.xMBPortEventInit                       0x08003b4c   Section        0  portevent.o(i.xMBPortEventInit)
-    i.xMBPortEventPost                       0x08003b5c   Section        0  portevent.o(i.xMBPortEventPost)
-    i.xMBPortSerialGetByte                   0x08003b6c   Section        0  portserial.o(i.xMBPortSerialGetByte)
-    i.xMBPortSerialInit                      0x08003b90   Section        0  portserial.o(i.xMBPortSerialInit)
-    i.xMBPortSerialPutByte                   0x08003bd8   Section        0  portserial.o(i.xMBPortSerialPutByte)
-    i.xMBPortTimersInit                      0x08003bf4   Section        0  porttimer.o(i.xMBPortTimersInit)
-    i.xMBRTUReceiveFSM                       0x08003c70   Section        0  mbrtu.o(i.xMBRTUReceiveFSM)
-    i.xMBRTUTimerT35Expired                  0x08003cd0   Section        0  mbrtu.o(i.xMBRTUTimerT35Expired)
-    i.xMBRTUTransmitFSM                      0x08003cf8   Section        0  mbrtu.o(i.xMBRTUTransmitFSM)
-    .constdata                               0x08003d48   Section       16  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08003d58   Section        8  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08003d60   Section      512  mbcrc.o(.constdata)
-    aucCRCHi                                 0x08003d60   Data         256  mbcrc.o(.constdata)
-    aucCRCLo                                 0x08003e60   Data         256  mbcrc.o(.constdata)
+    i.eMBRegInputCB                          0x080036d4   Section        0  main.o(i.eMBRegInputCB)
+    i.main                                   0x08003734   Section        0  main.o(i.main)
+    i.prveMBError2Exception                  0x0800386c   Section        0  mbutils.o(i.prveMBError2Exception)
+    i.prvucMBBIN2CHAR                        0x08003884   Section        0  mbascii.o(i.prvucMBBIN2CHAR)
+    prvucMBBIN2CHAR                          0x08003885   Thumb Code    26  mbascii.o(i.prvucMBBIN2CHAR)
+    i.prvucMBLRC                             0x0800389e   Section        0  mbascii.o(i.prvucMBLRC)
+    prvucMBLRC                               0x0800389f   Thumb Code    24  mbascii.o(i.prvucMBLRC)
+    i.prvvTIMERExpiredISR                    0x080038b8   Section        0  porttimer.o(i.prvvTIMERExpiredISR)
+    i.prvvUARTRxISR                          0x080038c4   Section        0  portserial.o(i.prvvUARTRxISR)
+    i.prvvUARTTxReadyISR                     0x080038d0   Section        0  portserial.o(i.prvvUARTTxReadyISR)
+    i.usMBCRC16                              0x080038dc   Section        0  mbcrc.o(i.usMBCRC16)
+    i.vMBPortSerialEnable                    0x08003908   Section        0  portserial.o(i.vMBPortSerialEnable)
+    i.vMBPortTimersDisable                   0x080039b4   Section        0  porttimer.o(i.vMBPortTimersDisable)
+    i.vMBPortTimersEnable                    0x080039c0   Section        0  porttimer.o(i.vMBPortTimersEnable)
+    i.xMBASCIIReceiveFSM                     0x080039dc   Section        0  mbascii.o(i.xMBASCIIReceiveFSM)
+    i.xMBASCIITimerT1SExpired                0x08003ab8   Section        0  mbascii.o(i.xMBASCIITimerT1SExpired)
+    i.xMBASCIITransmitFSM                    0x08003ad8   Section        0  mbascii.o(i.xMBASCIITransmitFSM)
+    i.xMBPortEventGet                        0x08003b7c   Section        0  portevent.o(i.xMBPortEventGet)
+    i.xMBPortEventInit                       0x08003b98   Section        0  portevent.o(i.xMBPortEventInit)
+    i.xMBPortEventPost                       0x08003ba8   Section        0  portevent.o(i.xMBPortEventPost)
+    i.xMBPortSerialGetByte                   0x08003bb8   Section        0  portserial.o(i.xMBPortSerialGetByte)
+    i.xMBPortSerialInit                      0x08003bdc   Section        0  portserial.o(i.xMBPortSerialInit)
+    i.xMBPortSerialPutByte                   0x08003c24   Section        0  portserial.o(i.xMBPortSerialPutByte)
+    i.xMBPortTimersInit                      0x08003c40   Section        0  porttimer.o(i.xMBPortTimersInit)
+    i.xMBRTUReceiveFSM                       0x08003cbc   Section        0  mbrtu.o(i.xMBRTUReceiveFSM)
+    i.xMBRTUTimerT35Expired                  0x08003d1c   Section        0  mbrtu.o(i.xMBRTUTimerT35Expired)
+    i.xMBRTUTransmitFSM                      0x08003d44   Section        0  mbrtu.o(i.xMBRTUTransmitFSM)
+    .constdata                               0x08003d94   Section       16  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08003da4   Section        8  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08003dac   Section      512  mbcrc.o(.constdata)
+    aucCRCHi                                 0x08003dac   Data         256  mbcrc.o(.constdata)
+    aucCRCLo                                 0x08003eac   Data         256  mbcrc.o(.constdata)
     .data                                    0x20000000   Section        4  system_stm32f1xx.o(.data)
     .data                                    0x20000004   Section       12  main.o(.data)
     usRegInputStart                          0x20000004   Data           2  main.o(.data)
@@ -1627,34 +1627,34 @@ Image Symbol Table
     eMBRTUStop                               0x080035fd   Thumb Code    28  mbrtu.o(i.eMBRTUStop)
     eMBRegCoilsCB                            0x08003619   Thumb Code     4  main.o(i.eMBRegCoilsCB)
     eMBRegDiscreteCB                         0x0800361d   Thumb Code     4  main.o(i.eMBRegDiscreteCB)
-    eMBRegHoldingCB                          0x08003621   Thumb Code    96  main.o(i.eMBRegHoldingCB)
-    eMBRegInputCB                            0x08003689   Thumb Code    92  main.o(i.eMBRegInputCB)
-    main                                     0x080036e9   Thumb Code   254  main.o(i.main)
-    prveMBError2Exception                    0x08003821   Thumb Code    24  mbutils.o(i.prveMBError2Exception)
-    prvvTIMERExpiredISR                      0x0800386d   Thumb Code     6  porttimer.o(i.prvvTIMERExpiredISR)
-    prvvUARTRxISR                            0x08003879   Thumb Code     6  portserial.o(i.prvvUARTRxISR)
-    prvvUARTTxReadyISR                       0x08003885   Thumb Code     6  portserial.o(i.prvvUARTTxReadyISR)
-    usMBCRC16                                0x08003891   Thumb Code    40  mbcrc.o(i.usMBCRC16)
-    vMBPortSerialEnable                      0x080038bd   Thumb Code   154  portserial.o(i.vMBPortSerialEnable)
-    vMBPortTimersDisable                     0x08003969   Thumb Code     6  porttimer.o(i.vMBPortTimersDisable)
-    vMBPortTimersEnable                      0x08003975   Thumb Code    22  porttimer.o(i.vMBPortTimersEnable)
-    xMBASCIIReceiveFSM                       0x08003991   Thumb Code   214  mbascii.o(i.xMBASCIIReceiveFSM)
-    xMBASCIITimerT1SExpired                  0x08003a6d   Thumb Code    26  mbascii.o(i.xMBASCIITimerT1SExpired)
-    xMBASCIITransmitFSM                      0x08003a8d   Thumb Code   160  mbascii.o(i.xMBASCIITransmitFSM)
-    xMBPortEventGet                          0x08003b31   Thumb Code    24  portevent.o(i.xMBPortEventGet)
-    xMBPortEventInit                         0x08003b4d   Thumb Code    10  portevent.o(i.xMBPortEventInit)
-    xMBPortEventPost                         0x08003b5d   Thumb Code    12  portevent.o(i.xMBPortEventPost)
-    xMBPortSerialGetByte                     0x08003b6d   Thumb Code    28  portserial.o(i.xMBPortSerialGetByte)
-    xMBPortSerialInit                        0x08003b91   Thumb Code    64  portserial.o(i.xMBPortSerialInit)
-    xMBPortSerialPutByte                     0x08003bd9   Thumb Code    22  portserial.o(i.xMBPortSerialPutByte)
-    xMBPortTimersInit                        0x08003bf5   Thumb Code   116  porttimer.o(i.xMBPortTimersInit)
-    xMBRTUReceiveFSM                         0x08003c71   Thumb Code    88  mbrtu.o(i.xMBRTUReceiveFSM)
-    xMBRTUTimerT35Expired                    0x08003cd1   Thumb Code    34  mbrtu.o(i.xMBRTUTimerT35Expired)
-    xMBRTUTransmitFSM                        0x08003cf9   Thumb Code    76  mbrtu.o(i.xMBRTUTransmitFSM)
-    AHBPrescTable                            0x08003d48   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x08003d58   Data           8  system_stm32f1xx.o(.constdata)
-    Region$$Table$$Base                      0x08003f60   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003f80   Number         0  anon$$obj.o(Region$$Table)
+    eMBRegHoldingCB                          0x08003621   Thumb Code   172  main.o(i.eMBRegHoldingCB)
+    eMBRegInputCB                            0x080036d5   Thumb Code    92  main.o(i.eMBRegInputCB)
+    main                                     0x08003735   Thumb Code   254  main.o(i.main)
+    prveMBError2Exception                    0x0800386d   Thumb Code    24  mbutils.o(i.prveMBError2Exception)
+    prvvTIMERExpiredISR                      0x080038b9   Thumb Code     6  porttimer.o(i.prvvTIMERExpiredISR)
+    prvvUARTRxISR                            0x080038c5   Thumb Code     6  portserial.o(i.prvvUARTRxISR)
+    prvvUARTTxReadyISR                       0x080038d1   Thumb Code     6  portserial.o(i.prvvUARTTxReadyISR)
+    usMBCRC16                                0x080038dd   Thumb Code    40  mbcrc.o(i.usMBCRC16)
+    vMBPortSerialEnable                      0x08003909   Thumb Code   154  portserial.o(i.vMBPortSerialEnable)
+    vMBPortTimersDisable                     0x080039b5   Thumb Code     6  porttimer.o(i.vMBPortTimersDisable)
+    vMBPortTimersEnable                      0x080039c1   Thumb Code    22  porttimer.o(i.vMBPortTimersEnable)
+    xMBASCIIReceiveFSM                       0x080039dd   Thumb Code   214  mbascii.o(i.xMBASCIIReceiveFSM)
+    xMBASCIITimerT1SExpired                  0x08003ab9   Thumb Code    26  mbascii.o(i.xMBASCIITimerT1SExpired)
+    xMBASCIITransmitFSM                      0x08003ad9   Thumb Code   160  mbascii.o(i.xMBASCIITransmitFSM)
+    xMBPortEventGet                          0x08003b7d   Thumb Code    24  portevent.o(i.xMBPortEventGet)
+    xMBPortEventInit                         0x08003b99   Thumb Code    10  portevent.o(i.xMBPortEventInit)
+    xMBPortEventPost                         0x08003ba9   Thumb Code    12  portevent.o(i.xMBPortEventPost)
+    xMBPortSerialGetByte                     0x08003bb9   Thumb Code    28  portserial.o(i.xMBPortSerialGetByte)
+    xMBPortSerialInit                        0x08003bdd   Thumb Code    64  portserial.o(i.xMBPortSerialInit)
+    xMBPortSerialPutByte                     0x08003c25   Thumb Code    22  portserial.o(i.xMBPortSerialPutByte)
+    xMBPortTimersInit                        0x08003c41   Thumb Code   116  porttimer.o(i.xMBPortTimersInit)
+    xMBRTUReceiveFSM                         0x08003cbd   Thumb Code    88  mbrtu.o(i.xMBRTUReceiveFSM)
+    xMBRTUTimerT35Expired                    0x08003d1d   Thumb Code    34  mbrtu.o(i.xMBRTUTimerT35Expired)
+    xMBRTUTransmitFSM                        0x08003d45   Thumb Code    76  mbrtu.o(i.xMBRTUTransmitFSM)
+    AHBPrescTable                            0x08003d94   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x08003da4   Data           8  system_stm32f1xx.o(.constdata)
+    Region$$Table$$Base                      0x08003fac   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003fcc   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f1xx.o(.data)
     pxMBFrameCBByteReceived                  0x20000058   Data           4  mb.o(.data)
     pxMBFrameCBTransmitterEmpty              0x2000005c   Data           4  mb.o(.data)
@@ -1685,9 +1685,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00004088, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000040d4, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003f80, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003fcc, Max: 0x00010000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1883,37 +1883,37 @@ Memory Map of the image
     0x080035fc   0x0000001c   Code   RO         3248    i.eMBRTUStop        mbrtu.o
     0x08003618   0x00000004   Code   RO          388    i.eMBRegCoilsCB     main.o
     0x0800361c   0x00000004   Code   RO          389    i.eMBRegDiscreteCB  main.o
-    0x08003620   0x00000068   Code   RO          390    i.eMBRegHoldingCB   main.o
-    0x08003688   0x00000060   Code   RO          391    i.eMBRegInputCB     main.o
-    0x080036e8   0x00000138   Code   RO          392    i.main              main.o
-    0x08003820   0x00000018   Code   RO         3314    i.prveMBError2Exception  mbutils.o
-    0x08003838   0x0000001a   Code   RO         2979    i.prvucMBBIN2CHAR   mbascii.o
-    0x08003852   0x00000018   Code   RO         2980    i.prvucMBLRC        mbascii.o
-    0x0800386a   0x00000002   PAD
-    0x0800386c   0x0000000c   Code   RO         3444    i.prvvTIMERExpiredISR  porttimer.o
-    0x08003878   0x0000000c   Code   RO         3388    i.prvvUARTRxISR     portserial.o
-    0x08003884   0x0000000c   Code   RO         3389    i.prvvUARTTxReadyISR  portserial.o
-    0x08003890   0x0000002c   Code   RO         3056    i.usMBCRC16         mbcrc.o
-    0x080038bc   0x000000ac   Code   RO         3390    i.vMBPortSerialEnable  portserial.o
-    0x08003968   0x0000000c   Code   RO         3474    i.vMBPortTimersDisable  porttimer.o
-    0x08003974   0x0000001c   Code   RO         3468    i.vMBPortTimersEnable  porttimer.o
-    0x08003990   0x000000dc   Code   RO         2981    i.xMBASCIIReceiveFSM  mbascii.o
-    0x08003a6c   0x00000020   Code   RO         2982    i.xMBASCIITimerT1SExpired  mbascii.o
-    0x08003a8c   0x000000a4   Code   RO         2983    i.xMBASCIITransmitFSM  mbascii.o
-    0x08003b30   0x0000001c   Code   RO         3350    i.xMBPortEventGet   portevent.o
-    0x08003b4c   0x00000010   Code   RO         3351    i.xMBPortEventInit  portevent.o
-    0x08003b5c   0x00000010   Code   RO         3352    i.xMBPortEventPost  portevent.o
-    0x08003b6c   0x00000024   Code   RO         3391    i.xMBPortSerialGetByte  portserial.o
-    0x08003b90   0x00000048   Code   RO         3392    i.xMBPortSerialInit  portserial.o
-    0x08003bd8   0x0000001c   Code   RO         3393    i.xMBPortSerialPutByte  portserial.o
-    0x08003bf4   0x0000007c   Code   RO         3445    i.xMBPortTimersInit  porttimer.o
-    0x08003c70   0x00000060   Code   RO         3249    i.xMBRTUReceiveFSM  mbrtu.o
-    0x08003cd0   0x00000028   Code   RO         3250    i.xMBRTUTimerT35Expired  mbrtu.o
-    0x08003cf8   0x00000050   Code   RO         3251    i.xMBRTUTransmitFSM  mbrtu.o
-    0x08003d48   0x00000010   Data   RO            6    .constdata          system_stm32f1xx.o
-    0x08003d58   0x00000008   Data   RO            7    .constdata          system_stm32f1xx.o
-    0x08003d60   0x00000200   Data   RO         3057    .constdata          mbcrc.o
-    0x08003f60   0x00000020   Data   RO         3508    Region$$Table       anon$$obj.o
+    0x08003620   0x000000b4   Code   RO          390    i.eMBRegHoldingCB   main.o
+    0x080036d4   0x00000060   Code   RO          391    i.eMBRegInputCB     main.o
+    0x08003734   0x00000138   Code   RO          392    i.main              main.o
+    0x0800386c   0x00000018   Code   RO         3314    i.prveMBError2Exception  mbutils.o
+    0x08003884   0x0000001a   Code   RO         2979    i.prvucMBBIN2CHAR   mbascii.o
+    0x0800389e   0x00000018   Code   RO         2980    i.prvucMBLRC        mbascii.o
+    0x080038b6   0x00000002   PAD
+    0x080038b8   0x0000000c   Code   RO         3444    i.prvvTIMERExpiredISR  porttimer.o
+    0x080038c4   0x0000000c   Code   RO         3388    i.prvvUARTRxISR     portserial.o
+    0x080038d0   0x0000000c   Code   RO         3389    i.prvvUARTTxReadyISR  portserial.o
+    0x080038dc   0x0000002c   Code   RO         3056    i.usMBCRC16         mbcrc.o
+    0x08003908   0x000000ac   Code   RO         3390    i.vMBPortSerialEnable  portserial.o
+    0x080039b4   0x0000000c   Code   RO         3474    i.vMBPortTimersDisable  porttimer.o
+    0x080039c0   0x0000001c   Code   RO         3468    i.vMBPortTimersEnable  porttimer.o
+    0x080039dc   0x000000dc   Code   RO         2981    i.xMBASCIIReceiveFSM  mbascii.o
+    0x08003ab8   0x00000020   Code   RO         2982    i.xMBASCIITimerT1SExpired  mbascii.o
+    0x08003ad8   0x000000a4   Code   RO         2983    i.xMBASCIITransmitFSM  mbascii.o
+    0x08003b7c   0x0000001c   Code   RO         3350    i.xMBPortEventGet   portevent.o
+    0x08003b98   0x00000010   Code   RO         3351    i.xMBPortEventInit  portevent.o
+    0x08003ba8   0x00000010   Code   RO         3352    i.xMBPortEventPost  portevent.o
+    0x08003bb8   0x00000024   Code   RO         3391    i.xMBPortSerialGetByte  portserial.o
+    0x08003bdc   0x00000048   Code   RO         3392    i.xMBPortSerialInit  portserial.o
+    0x08003c24   0x0000001c   Code   RO         3393    i.xMBPortSerialPutByte  portserial.o
+    0x08003c40   0x0000007c   Code   RO         3445    i.xMBPortTimersInit  porttimer.o
+    0x08003cbc   0x00000060   Code   RO         3249    i.xMBRTUReceiveFSM  mbrtu.o
+    0x08003d1c   0x00000028   Code   RO         3250    i.xMBRTUTimerT35Expired  mbrtu.o
+    0x08003d44   0x00000050   Code   RO         3251    i.xMBRTUTransmitFSM  mbrtu.o
+    0x08003d94   0x00000010   Data   RO            6    .constdata          system_stm32f1xx.o
+    0x08003da4   0x00000008   Data   RO            7    .constdata          system_stm32f1xx.o
+    0x08003dac   0x00000200   Data   RO         3057    .constdata          mbcrc.o
+    0x08003fac   0x00000020   Data   RO         3508    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000009b8, Max: 0x00005000, ABSOLUTE)
@@ -1950,13 +1950,13 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1378         62          0          4        164       7250   7303w.o
+      1378         62          0          4        164       7246   7303w.o
        366         26          0          0          0       3849   dip.o
         92          4          0          0          0        810   dma.o
        224         16          0          0          0       1027   gpio.o
         44          8          0          0         16        739   iwdg.o
        574         82          0         32          0       6318   led_and_beep.o
-       740         96          0         12        200      10626   main.o
+       816         96          0         12        200      10718   main.o
        412         68          0        172          0       7624   mb.o
        750         40          0         16          0       8735   mbascii.o
         44          4        512          0          0       1292   mbcrc.o
@@ -1987,7 +1987,7 @@ Image component sizes
        416         36          0          0        352       2201   usart.o
 
     ----------------------------------------------------------------------
-     15330        970        804        264       2224     630687   Object Totals
+     15406        970        804        264       2224     630775   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          0          3          0          0   (incl. Padding)
 
@@ -2027,15 +2027,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15452        986        804        264       2224     621407   Grand Totals
-     15452        986        804        264       2224     621407   ELF Image Totals
-     15452        986        804        264          0          0   ROM Totals
+     15528        986        804        264       2224     621495   Grand Totals
+     15528        986        804        264       2224     621495   ELF Image Totals
+     15528        986        804        264          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                16256 (  15.88kB)
+    Total RO  Size (Code + RO Data)                16332 (  15.95kB)
     Total RW  Size (RW Data + ZI Data)              2488 (   2.43kB)
-    Total ROM Size (Code + RO Data + RW Data)      16520 (  16.13kB)
+    Total ROM Size (Code + RO Data + RW Data)      16596 (  16.21kB)
 
 ==============================================================================
 

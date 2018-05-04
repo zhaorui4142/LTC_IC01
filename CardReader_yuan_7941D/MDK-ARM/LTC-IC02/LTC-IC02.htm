@@ -3,7 +3,7 @@
 <title>Static Call Graph - [LTC-IC02\LTC-IC02.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image LTC-IC02\LTC-IC02.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri Sep 22 16:55:54 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sun Dec 10 09:05:30 2017
 <BR><P>
 <H3>Maximum Stack Usage =        200 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -319,7 +319,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[62]"></a>DIP_GetBadurate</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, dip.o(i.DIP_GetBadurate))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DIP_GetBadurate &rArr; DIP_GetSW2BitStat
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DIP_GetBadurate &rArr; DIP_GetSW2BitStat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DIP_GetSW2BitStat
 </UL>
@@ -327,7 +327,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[64]"></a>DIP_GetDataBitsLen</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, dip.o(i.DIP_GetDataBitsLen))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DIP_GetDataBitsLen &rArr; DIP_GetSW2BitStat
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DIP_GetDataBitsLen &rArr; DIP_GetSW2BitStat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DIP_GetSW2BitStat
 </UL>
@@ -335,14 +335,14 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[65]"></a>DIP_GetParity</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dip.o(i.DIP_GetParity))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DIP_GetParity &rArr; DIP_GetSW2BitStat
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DIP_GetParity &rArr; DIP_GetSW2BitStat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DIP_GetSW2BitStat
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[61]"></a>DIP_GetSW1BitStat</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, dip.o(i.DIP_GetSW1BitStat))
+<P><STRONG><a name="[61]"></a>DIP_GetSW1BitStat</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, dip.o(i.DIP_GetSW1BitStat))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DIP_GetSW1BitStat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
@@ -350,8 +350,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DIP_GetAddress
 </UL>
 
-<P><STRONG><a name="[63]"></a>DIP_GetSW2BitStat</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, dip.o(i.DIP_GetSW2BitStat))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DIP_GetSW2BitStat
+<P><STRONG><a name="[63]"></a>DIP_GetSW2BitStat</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, dip.o(i.DIP_GetSW2BitStat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DIP_GetSW2BitStat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 </UL>
@@ -362,7 +362,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[67]"></a>DIP_GetStopBitsLen</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, dip.o(i.DIP_GetStopBitsLen))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DIP_GetStopBitsLen &rArr; DIP_GetSW2BitStat
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DIP_GetStopBitsLen &rArr; DIP_GetSW2BitStat
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DIP_GetSW2BitStat
 </UL>
@@ -981,7 +981,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4]"></a>MX_GPIO_Init</STRONG> (Thumb, 208 bytes, Stack size 48 bytes, gpio.o(i.MX_GPIO_Init))
+<P><STRONG><a name="[b4]"></a>MX_GPIO_Init</STRONG> (Thumb, 210 bytes, Stack size 48 bytes, gpio.o(i.MX_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -1389,7 +1389,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadDiscreteInputs
 </UL>
 
-<P><STRONG><a name="[d0]"></a>eMBRegHoldingCB</STRONG> (Thumb, 96 bytes, Stack size 20 bytes, main.o(i.eMBRegHoldingCB))
+<P><STRONG><a name="[d0]"></a>eMBRegHoldingCB</STRONG> (Thumb, 172 bytes, Stack size 20 bytes, main.o(i.eMBRegHoldingCB))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = eMBRegHoldingCB
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteMultipleHoldingRegister
