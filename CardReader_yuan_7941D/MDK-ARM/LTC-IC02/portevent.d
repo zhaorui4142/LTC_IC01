@@ -1,9 +1,9 @@
 ltc-ic02\portevent.o: ..\freemodbus\portevent.c
 ltc-ic02\portevent.o: ..\freemodbus\inc\mb.h
 ltc-ic02\portevent.o: ..\freemodbus\inc\port.h
-ltc-ic02\portevent.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-ltc-ic02\portevent.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
-ltc-ic02\portevent.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+ltc-ic02\portevent.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+ltc-ic02\portevent.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+ltc-ic02\portevent.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ltc-ic02\portevent.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 ltc-ic02\portevent.o: ../Inc/stm32f1xx_hal_conf.h
 ltc-ic02\portevent.o: ../Inc/main.h
@@ -18,7 +18,7 @@ ltc-ic02\portevent.o: ../Drivers/CMSIS/Include/core_cmFunc.h
 ltc-ic02\portevent.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 ltc-ic02\portevent.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 ltc-ic02\portevent.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-ltc-ic02\portevent.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+ltc-ic02\portevent.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ltc-ic02\portevent.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 ltc-ic02\portevent.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 ltc-ic02\portevent.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [LTC-IC02\LTC-IC02.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image LTC-IC02\LTC-IC02.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sun Dec 10 09:05:30 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri May 04 10:50:00 2018
 <BR><P>
 <H3>Maximum Stack Usage =        200 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -925,8 +925,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;S7941D_Poll
-<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateModbusBuffer
 </UL>
 
 <P><STRONG><a name="[af]"></a>Led1TurnOn</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, led_and_beep.o(i.Led1TurnOn))
@@ -934,8 +934,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateModbusBuffer
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;S7941D_Poll
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[b0]"></a>Led2TurnOff</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, led_and_beep.o(i.Led2TurnOff))
@@ -945,7 +945,6 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;S7941D_Poll
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateModbusBuffer
 </UL>
 
 <P><STRONG><a name="[b1]"></a>Led2TurnOn</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, led_and_beep.o(i.Led2TurnOn))
@@ -1069,7 +1068,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = S7941D_Poll &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led2TurnOff
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led1TurnOff
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led1TurnOn
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateModbusBuffer
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckTimeout
@@ -1172,12 +1171,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xb.o(RESET)
 </UL>
-<P><STRONG><a name="[be]"></a>UpdateModbusBuffer</STRONG> (Thumb, 232 bytes, Stack size 16 bytes, 7941d.o(i.UpdateModbusBuffer))
+<P><STRONG><a name="[be]"></a>UpdateModbusBuffer</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, 7941d.o(i.UpdateModbusBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UpdateModbusBuffer &rArr; Led2TurnOn
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led2TurnOn
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led2TurnOff
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led1TurnOn
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led1TurnOff
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;S7941D_Poll
 </UL>
@@ -1404,7 +1402,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadInputRegister
 </UL>
 
-<P><STRONG><a name="[35]"></a>main</STRONG> (Thumb, 254 bytes, Stack size 48 bytes, main.o(i.main))
+<P><STRONG><a name="[35]"></a>main</STRONG> (Thumb, 298 bytes, Stack size 48 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = main &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll

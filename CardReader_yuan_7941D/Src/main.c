@@ -133,14 +133,15 @@ int main(void)
         (usRegHoldingBuf+50)[i] = str[i];
     }
         
-    BeepTurnOn();
-    Led1TurnOn();
-    HAL_Delay(200);
-    Led1TurnOff();
-    Led2TurnOn();
-    HAL_Delay(200);
-    Led2TurnOff();
-    BeepTurnOff();
+    BeepTurnOn();Led1TurnOn();Led2TurnOff();
+    HAL_Delay(100);
+    BeepTurnOff();Led1TurnOff();Led2TurnOff();
+    HAL_Delay(100);
+		BeepTurnOn();Led1TurnOff();Led2TurnOn();
+		HAL_Delay(100);
+    BeepTurnOff();Led1TurnOff();Led2TurnOff();
+		HAL_Delay(100);
+    Led1TurnOn();Led2TurnOff();
     
     //Æô¶¯¿´ÃÅ¹·
     HAL_IWDG_Start(&hiwdg);

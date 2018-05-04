@@ -109,7 +109,7 @@ void S7941D_Poll(void)
             hcommtag.buf[1] = 0x0000;
             hcommtag.buf[2] = 0x0000;
             
-            Led1TurnOff();//LEDָʾ
+            Led1TurnOn();//LEDָʾ
             Led2TurnOff();//LEDָʾ
             
             flag_DealyClear = false;
@@ -134,8 +134,8 @@ void UpdateModbusBuffer(void)
             hcommtag.buf[1] = hidtag.buf[1];
             hcommtag.buf[2] = hidtag.buf[2];
         
-            Led1TurnOn();//LEDָʾ
-            Led2TurnOff();//LEDָʾ
+            Led1TurnOff();//LEDָʾ
+            Led2TurnOn();//LEDָʾ
         }break;
         
         case 0x01:       //MIFARE 1K
@@ -149,7 +149,8 @@ void UpdateModbusBuffer(void)
             hcommtag.buf[0] =  hictag.buf[0];
             hcommtag.buf[1] =  hictag.buf[1];
             hcommtag.buf[2] =  hictag.buf[2];
-
+					
+						Led1TurnOff();//LEDָʾ
             Led2TurnOn();//LEDָʾ
         }break;
         

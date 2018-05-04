@@ -70,13 +70,13 @@ void LedBeepPoll(void)
         //µ„¡¡
         case LED_ON:
         {
-            HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
         }break;
         
         //œ®√
         case LED_OFF:
         {
-            HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+            HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
         }break;
         
         //…¡À∏
@@ -96,9 +96,9 @@ void LedBeepPoll(void)
             {
                 ellipsed_time %= (LED1_BLINK_T1_MS + LED1_BLINK_T2_MS);
                 if(ellipsed_time <= LED1_BLINK_T1_MS)
-                    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-                else
                     HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+                else
+                    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
             }
         }
     }
@@ -109,13 +109,13 @@ void LedBeepPoll(void)
         //µ„¡¡
         case LED_ON:
         {
-            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
         }break;
         
         //œ®√
         case LED_OFF:
         {
-            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
+            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
         }break;
         
         //…¡À∏
@@ -135,9 +135,9 @@ void LedBeepPoll(void)
             {
                 ellipsed_time %= (LED2_BLINK_T1_MS + LED2_BLINK_T2_MS);
                 if(ellipsed_time <= LED2_BLINK_T1_MS)
-                    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
-                else
                     HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
+                else
+                    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
             }
         }
     }
@@ -205,14 +205,14 @@ void LedBeepPoll(void)
 //Led1≥£¡¡
 void Led1TurnOn(void)
 {
-    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
     mode_led1 = LED_ON;
 }
 
 //Led1πÿ±’
 void Led1TurnOff(void)
 {
-    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
     mode_led1 = LED_OFF;
 }
 
@@ -227,14 +227,14 @@ void Led1Blink(uint16_t ms)
 //Led2≥£¡¡
 void Led2TurnOn(void)
 {
-    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
     mode_led2 = LED_ON;
 }
 
 //Led2πÿ±’
 void Led2TurnOff(void)
 {
-    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
     mode_led2 = LED_OFF;
 }
 

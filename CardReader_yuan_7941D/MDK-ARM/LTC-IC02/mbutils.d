@@ -1,10 +1,10 @@
 ltc-ic02\mbutils.o: ..\freemodbus\src\mbutils.c
-ltc-ic02\mbutils.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-ltc-ic02\mbutils.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+ltc-ic02\mbutils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+ltc-ic02\mbutils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ltc-ic02\mbutils.o: ..\freemodbus\inc\port.h
-ltc-ic02\mbutils.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-ltc-ic02\mbutils.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
-ltc-ic02\mbutils.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+ltc-ic02\mbutils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+ltc-ic02\mbutils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+ltc-ic02\mbutils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ltc-ic02\mbutils.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 ltc-ic02\mbutils.o: ../Inc/stm32f1xx_hal_conf.h
 ltc-ic02\mbutils.o: ../Inc/main.h
@@ -19,7 +19,7 @@ ltc-ic02\mbutils.o: ../Drivers/CMSIS/Include/core_cmFunc.h
 ltc-ic02\mbutils.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 ltc-ic02\mbutils.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 ltc-ic02\mbutils.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-ltc-ic02\mbutils.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+ltc-ic02\mbutils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ltc-ic02\mbutils.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 ltc-ic02\mbutils.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 ltc-ic02\mbutils.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
